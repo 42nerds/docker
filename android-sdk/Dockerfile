@@ -14,7 +14,7 @@ ENV ANDROID_HOME /opt/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 ENV ANDROID_FILE android-sdk_r24.4.1-linux.tgz
 
-RUN cd && wget -q http://dl.google.com/android/${ANDROID_FILE} && \
+RUN cd /opt && wget -q http://dl.google.com/android/${ANDROID_FILE} && \
     tar xzf ${ANDROID_FILE} && \
     echo y | android update sdk -u -a --filter tools,platform-tools,${ANDROID_VERSIONS},build-tools-${ANDROID_BUILD_TOOLS} && \
     rm ${ANDROID_FILE} 
