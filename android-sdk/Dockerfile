@@ -22,10 +22,10 @@ RUN tar xzf ${ANDROID_FILE}
 RUN rm ${ANDROID_FILE} 
 
 # Set env vars
-ENV ANDROID_VERSIONS android-15,android-16,android-17,android-18,android-19,android-20,android-21 
-ENV ANDROID_BUILD_TOOLS 21.1.0
+ENV ANDROID_VERSIONS android-18,android-19,android-20,android-21,android-22
+ENV ANDROID_BUILD_TOOLS 22.0.1
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
 # Update the sdk with specified versions and buildtools
-RUN echo y | android update sdk --no-ui -a --filter tools,platform-tools,${ANDROID_VERSIONS},build-tools-${ANDROID_BUILD_TOOLS}
+RUN echo y | android update sdk -u -a --filter tools,platform-tools,${ANDROID_VERSIONS},build-tools-${ANDROID_BUILD_TOOLS}
