@@ -1,6 +1,6 @@
 # This Dockerfile was inspired by https://github.com/evarga/docker-images
 # This image is basically just ubuntu with sshd installed and configured
-FROM ubuntu:trusty
+FROM 42nerds/base:latest
 MAINTAINER 42nerds - Inh. Julian Kaffke <info@42nerds.com>
 
 # Make sure the package repository is up to date.
