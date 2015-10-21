@@ -1,16 +1,13 @@
-# Jenkins Slave for building cordova apps
+# ![42nerds](https://42nerds.com/sites/56015d6106da30000100028a/assets/5626bb0ce3c2530001000000/Logo-42nerds-128.png) Jenkins Slave w/ Cordova
+
 This image is used by [Jenkins][jenkins] to dynamically start agents on Docker Hosts and build hybrid mobile applications e.g. cordova apps
 
 [jenkins]: https://jenkins-ci.org
 
 ## What's in it?
 
-Using our [jenkins-node image][jenkinsnode] we also installed common tools used for cordova application development:
-
 * cordova
 * android-sdk
-
-[jenkinsnode]:(https://github.com/42nerds/jenkins-node/)
 
 ## How To Use
 
@@ -24,7 +21,7 @@ The plugin mentioned above will pull the plugin automagically if configured corr
 However, if you haven't configured the automatic pull, you can do so manually by 
 
 ```
-docker pull 42nerds/cordova-android
+docker pull 42nerds/jenkins-cordova
 ```
 
 You'll find the repo on [docker hub][repo]

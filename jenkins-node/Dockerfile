@@ -2,20 +2,11 @@
 FROM 42nerds/jenkins-base:latest
 MAINTAINER 42nerds - Inh. Julian Kaffke <info@42nerds.com>
 
-# Write the setup script to a file (piping directly to bash does NOT cause docker build to fail if curl isn't installed)
-RUN curl -sL https://deb.nodesource.com/setup_0.12 > install_node.sh
-
-# Run setup script
-RUN bash install_node.sh
-
-# And remove it 
-RUN rm -f install_node.sh
-
-#...and finally install nodejs
-RUN apt-get install nodejs -y
-
-# Clean up
-RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN curl -sL https://deb.nodesource.com/setup_0.12 > install_node.sh && \
+    bash install_node.sh && \
+    rm -f install_node.sh && \
+    apt-get install nodejs -y && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 CMD ["/usr/sbin/sshd", "-D"]
