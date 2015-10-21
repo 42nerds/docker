@@ -14,4 +14,8 @@ RUN rm -f install_node.sh
 #...and finally install nodejs
 RUN apt-get install nodejs -y
 
+# Clean up
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 CMD ["/usr/sbin/sshd", "-D"]
