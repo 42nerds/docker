@@ -1,23 +1,16 @@
-# ![42nerds](https://42nerds.com/sites/56015d6106da30000100028a/assets/5626bb0ce3c2530001000000/Logo-42nerds-128.png) - Base images
+# ![42nerds](https://42nerds.com/sites/56015d6106da30000100028a/assets/5626bb0ce3c2530001000000/Logo-42nerds-128.png) - Java Images
 
-These images are based on the official ubuntu images. 
+These images are based on the `42nerds/base:trusty` you'll find [here](../../base/14.04/). 
 
 # Supported tags and respective `Dockerfile` links
 
-- [`14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/42nerds/docker/blob/master/base/14.04/Dockerfile)
-- [`15.04`, `vivid` (*vivid/Dockerfile*)](https://github.com/42nerds/docker/blob/master/base/15.04/Dockerfile)
-- [`15.10`, `wily` (*wily/Dockerfile*)](https://github.com/42nerds/docker/blob/master/base/15.10/Dockerfile)
+- [`7`, `latest` (*7/Dockerfile*)](https://github.com/42nerds/docker/blob/master/java/7/Dockerfile)
+- [`8` (*8/Dockerfile*)](https://github.com/42nerds/docker/blob/master/java/8/Dockerfile)
 
 
 ## What's in the box?
 
-We added some common libraries to make things easier. You'll find this in the image:
-
-* git
-* curl
-* wget
-* vim
-* software-properties-common
+The image uses oracle java 7 or 8. 
 
 ## License
 

@@ -3,13 +3,6 @@
 FROM 42nerds/base:latest
 MAINTAINER 42nerds - Inh. Julian Kaffke <info@42nerds.com>
 
-# Make sure the package repository is up to date.
-RUN apt-get update
-RUN apt-get -y upgrade
-
-# Install git
-RUN apt-get install -y git
-
 # Install a basic SSH server
 RUN apt-get install -y openssh-server
 
