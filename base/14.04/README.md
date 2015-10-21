@@ -2,7 +2,14 @@
 
 These images are based on the official ubuntu images. 
 
-## What's in it?
+# Supported tags and respective `Dockerfile` links
+
+- [`14.04`, `trusty`, `latest` (*trusty/Dockerfile*)](https://github.com/42nerds/docker/blob/master/14.04/Dockerfile)
+- [`15.04`, `vivid` (*vivid/Dockerfile*)](https://github.com/42nerds/docker/blob/master/15.04/Dockerfile)
+- [`15.10`, `wily` (*wily/Dockerfile*)](https://github.com/42nerds/docker/blob/master/15.10/Dockerfile)
+
+
+## What's in the box?
 
 We added some common libraries to make things easier. You'll find this in the image:
 
