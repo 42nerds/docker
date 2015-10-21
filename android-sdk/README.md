@@ -1,4 +1,4 @@
-<!-- # Jenkins Slave for building webapps
+# ![42nerds](https://42nerds.com/sites/56015d6106da30000100028a/assets/5626bb0ce3c2530001000000/Logo-42nerds-128.png) - Jenkins Slave for webapps
 
 This image is used by [Jenkins][jenkins] to dynamically start agents on Docker Hosts and build webapplications e.g. single page applications
 
@@ -6,31 +6,20 @@ This image is used by [Jenkins][jenkins] to dynamically start agents on Docker H
 
 ## What's in it?
 
-Using our [jenkins-node image][jenkinsnode] we also installed common tools used for webapplication development:
-
-* bower
-* gulp
-
-[jenkinsnode]:(https://github.com/42nerds/jenkins-node/)
-
-## How To Use
-
-This image should be used with the Docker Plugin 'docker-plugin' in the Jenkins repo: https://wiki.jenkins-ci.org/display/JENKINS/Docker+Plugin
-
-Just follow the instructions in the wiki of the plugin
+The Android SDK
 
 ## Docker Image
 
-The plugin mentioned above will pull the plugin automagically if configured correctly.
-However, if you haven't configured the automatic pull, you can do so manually by 
+You can pull the image
 
 ```
-docker pull 42nerds/web-build
+docker pull 42nerds/android-sdk
 ```
 
-You'll find the repo on [docker hub][repo]
-
-[repo]: https://hub.docker.com/r/42nerds/web-build/
+## Links
+- [Github Repository](https://github.com/42nerds/android-sdk/)
+- [Docker Repository](https://hub.docker.com/r/42nerds/android-sdk/)
+- [42nerds.com](https://42nerds.com/)
 
 ## License
 
@@ -49,4 +38,4 @@ This repo is maintained and funded by 42nerds. The names and logos for
 We love open source software! See [our website][website] or [hire us][hire] to help you with your project.
 
 [website]: https://42nerds.com/?utm_source=github
-[hire]: https://42nerds.com/contact?utm_source=github -->
+[hire]: https://42nerds.com/contact?utm_source=github
