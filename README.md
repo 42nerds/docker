@@ -1,5 +1,4 @@
-![42nerds](https://42nerds.com/sites/56015d6106da30000100028a/assets/5626bb0ce3c2530001000000/Logo-42nerds-128.png)
-# 42nerds - Docker images
+# ![42nerds](https://42nerds.com/sites/56015d6106da30000100028a/assets/5626bb0ce3c2530001000000/Logo-42nerds-128.png) - Docker images
 
 This repository contains some useful Docker images.
 
